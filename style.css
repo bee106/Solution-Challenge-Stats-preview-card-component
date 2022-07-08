@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+:root{
+--Verydarkblue:hsl(233, 47%, 7%);
+--Darkdesaturatedblue:hsl(263, 52%, 18%);
+--Softviolet:hsl(277, 64%, 61%);
+--White:hsl(0, 0%, 100%);
+--Slightlytransparentwhite:hsla(0, 0%, 100%, 0.6);
+--font1: 'Lexend Deca', sans-serif;
+--font2:  'Inter', sans-serif;
+}
+
+body{
+    background-color: var(--Verydarkblue);     
+}
+.container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--Darkdesaturatedblue);
+        width: 80%;
+        margin: 5em  auto;
+        border-radius: 7px;
+}
+.img{
+    width: 100%;
+    height: 11em;
+    background-position: center;
+    border-radius: 7px 7px 0 0 ;
+    background-size: cover;
+    background-image:linear-gradient(#651a94be,#651a94be),url(./images/image-header-mobile.jpg);
+}
+.title{
+    text-align: center;
+    width: 90%;
+    margin: 1em auto;
+    color: var(--White);
+    font-size: 1.3em ;
+    font-weight: 700;
+    font-family: var(--font2);
+}
+.insights{
+    color: var(--Softviolet);
+}
+.paragraph{
+ text-align: center;
+ line-height: 22px;
+ color: var(--Slightlytransparentwhite);
+ font-size: 0.8em;
+ width: 90%;
+ margin: 0 auto;
+ margin-bottom: 20px;
+
+
+}
+.number{
+    color: var(--White);
+    font-size: 1.1em;
+    font-weight: 700;
+    font-family:var(--font2);
+    text-align: center;
+}
+.number__paragraph{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--Slightlytransparentwhite);
+    letter-spacing: 1.6px;
+    font-size: 0.6em;
+    margin-bottom: 2.5em;
+}
+@media (min-width:750px){
+    .container{
+        margin-top: 5em;
+    }
+    .container__number{
+        display: flex;
+        margin: 2em ;
+        justify-content: center;
+
+    }
+    .number__paragraph{
+        font-size: 0.5em;
+        letter-spacing: 1.4px;
+        text-align: start;
+      
+    }
+    .numbers{
+        margin:5px 1em;
+    }
+}
+@media (min-width:1000px){
+    .card{
+        margin: auto;
+    }
+    .container{
+        display: flex;
+        flex-direction: row-reverse;
+        max-height: 20em;
+        align-items: center;
+        
+    }
+    .img{
+        width: 90%;
+        height: 20em;
+        border-radius: 0 7px 7px 0;
+    }
+    .title{
+        text-align: start;
+        width: 70%;
+        margin: 2em 0 0.7em 1.5em;
+        font-size: 1.6em;
+        
+    }
+    .paragraph{
+    text-align: start;
+    line-height: 1.5em;
+    width: 70%;
+    margin:0 3em;
+    }
+    .container__number{
+        display: flex;
+        margin: 2em 1.7em;
+
+    }
+    .number{
+        text-align: start;
+    }
+    .number__paragraph{
+        font-size: 0.5em;
+        letter-spacing: 1.4px;
+        text-align: start;
+      
+    }
+    .numbers{
+        margin:5px 1em;
+    }
+}
